@@ -9,7 +9,8 @@
     "lint:fix": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "docker:compose": "docker compose -f infra/compose.yaml up -d"
+    "docker:compose": "docker compose -f infra/compose.yaml up -d",
+    "docker:down": "docker compose -f infra/compose.yaml down"
   },
   "author": "",
   "license": "MIT",
