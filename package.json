@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run docker:up && next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "docker:compose": "docker compose -f infra/compose.yaml up -d",
-    "docker:down": "docker compose -f infra/compose.yaml down"
+    "docker:up": "docker compose -f infra/compose.yaml up -d",
+    "docker:down": "docker compose -f infra/compose.yaml down",
+    "docker:stop": "docker compose -f infra/compose.yaml stop"
   },
   "author": "",
   "license": "MIT",
